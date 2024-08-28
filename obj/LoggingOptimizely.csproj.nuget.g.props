@@ -88,9 +88,22 @@
       <Link>modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip</Link>
     </None>
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)episerver.cloudplatform.cms\1.6.1\contentFiles\any\netstandard2.1\TraceUpload.zip" Condition="Exists('$(NuGetPackageRoot)episerver.cloudplatform.cms\1.6.1\contentFiles\any\netstandard2.1\TraceUpload.zip')">
+      <NuGetPackageId>EPiServer.CloudPlatform.Cms</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>TraceUpload.zip</TargetPath>
+      <Private>True</Private>
+      <Link>TraceUpload.zip</Link>
+    </None>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\hule\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgEPiServer_Framework Condition=" '$(PkgEPiServer_Framework)' == '' ">C:\Users\hule\.nuget\packages\episerver.framework\12.21.2</PkgEPiServer_Framework>
     <PkgEPiServer_CMS_Core Condition=" '$(PkgEPiServer_CMS_Core)' == '' ">C:\Users\hule\.nuget\packages\episerver.cms.core\12.21.2</PkgEPiServer_CMS_Core>
+    <PkgEPiServer_CloudPlatform_Cms Condition=" '$(PkgEPiServer_CloudPlatform_Cms)' == '' ">C:\Users\hule\.nuget\packages\episerver.cloudplatform.cms\1.6.1</PkgEPiServer_CloudPlatform_Cms>
   </PropertyGroup>
 </Project>

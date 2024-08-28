@@ -1,0 +1,121 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_flat_0_aaaaaa_40x100.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_flat_0_aaaaaa_40x100.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_flat_75_ffffff_40x100.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_flat_75_ffffff_40x100.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_glass_55_fbf9ee_1x400.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_glass_55_fbf9ee_1x400.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_glass_65_ffffff_1x400.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_glass_65_ffffff_1x400.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_glass_75_dadada_1x400.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_glass_75_dadada_1x400.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_glass_75_e6e6e6_1x400.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_glass_75_e6e6e6_1x400.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-bg_highlight-soft_75_cccccc_1x100.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-icons_222222_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_222222_256x240.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-icons_2e83ff_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_2e83ff_256x240.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-icons_454545_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_454545_256x240.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-icons_888888_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_888888_256x240.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\images\\ui-icons_cd0a0a_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_cd0a0a_256x240.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\css\\style.min.css"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\theme.css",
+      "PackagePath": "staticwebassets\\css\\theme.css"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\css\\theme.min.css",
+      "PackagePath": "staticwebassets\\css\\theme.min.css"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\gfx\\logotype.png",
+      "PackagePath": "staticwebassets\\gfx\\logotype.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\gfx\\page-type-thumbnail-article.png",
+      "PackagePath": "staticwebassets\\gfx\\page-type-thumbnail-article.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\gfx\\page-type-thumbnail-contact.png",
+      "PackagePath": "staticwebassets\\gfx\\page-type-thumbnail-contact.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\gfx\\page-type-thumbnail-product.png",
+      "PackagePath": "staticwebassets\\gfx\\page-type-thumbnail-product.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\gfx\\page-type-thumbnail-standard.png",
+      "PackagePath": "staticwebassets\\gfx\\page-type-thumbnail-standard.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\gfx\\page-type-thumbnail.png",
+      "PackagePath": "staticwebassets\\gfx\\page-type-thumbnail.png"
+    },
+    {
+      "Id": "D:\\Study\\LoggingOptimizely\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LoggingOptimizely.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LoggingOptimizely.props",
+      "PackagePath": "build\\LoggingOptimizely.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LoggingOptimizely.props",
+      "PackagePath": "buildMultiTargeting\\LoggingOptimizely.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LoggingOptimizely.props",
+      "PackagePath": "buildTransitive\\LoggingOptimizely.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

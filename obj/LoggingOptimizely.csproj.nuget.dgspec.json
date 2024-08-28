@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[12.29.0, )"
             },
+            "EPiServer.CloudPlatform.Cms": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
             "Wangkanai.Detection": {
               "target": "Package",
               "version": "[8.7.0, )"

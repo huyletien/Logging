@@ -2,6 +2,7 @@ using LoggingOptimizely.Models.Pages;
 using LoggingOptimizely.Models.ViewModels;
 using EPiServer.Framework.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using LoggingOptimizely.Business;
 
 namespace LoggingOptimizely.Controllers;
 
@@ -17,8 +18,14 @@ namespace LoggingOptimizely.Controllers;
 [TemplateDescriptor(Inherited = true)]
 public class DefaultPageController : PageControllerBase<SitePageData>
 {
+    private readonly ILoggingClass _loggingClass;
+    public DefaultPageController(ILoggingClass loggingClass)
+    { 
+        _loggingClass = loggingClass;
+    }
     public ViewResult Index(SitePageData currentPage)
     {
+        _loggingClass.LogSomething("This is a test");   
         var model = CreateModel(currentPage);
         return View($"~/Views/{currentPage.GetOriginalType().Name}/Index.cshtml", model);
     }

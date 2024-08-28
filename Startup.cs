@@ -4,16 +4,19 @@ using EPiServer.Cms.UI.AspNetIdentity;
 using EPiServer.Scheduler;
 using EPiServer.ServiceLocation;
 using EPiServer.Web.Routing;
+using LoggingOptimizely.Business;
 
 namespace LoggingOptimizely;
 
 public class Startup
 {
     private readonly IWebHostEnvironment _webHostingEnvironment;
+    private readonly IConfiguration _configuration;
 
-    public Startup(IWebHostEnvironment webHostingEnvironment)
+    public Startup(IWebHostEnvironment webHostingEnvironment, IConfiguration configuration)
     {
         _webHostingEnvironment = webHostingEnvironment;
+        _configuration = configuration;
     }
 
     public void ConfigureServices(IServiceCollection services)
@@ -24,7 +27,16 @@ public class Startup
              
             services.Configure<SchedulerOptions>(options => options.Enabled = false);
         }
-
+        else
+        {
+            services.AddCmsCloudPlatformSupport(_configuration);
+        }
+        //Lowercase urls, add trailing slash
+        services.Configure<RouteOptions>(o =>
+        {
+            o.AppendTrailingSlash = false;
+            o.LowercaseUrls = true;
+        });
         services
             .AddCmsAspNetIdentity<ApplicationUser>()
             .AddCms()
@@ -41,6 +53,17 @@ public class Startup
             options.Cookie.HttpOnly = true;
             options.Cookie.IsEssential = true;
         });
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowSpecificOrigins",
+                builder =>
+                {
+                    builder.WithOrigins("http://kamikazed6s81prod.paastest.epimore.com")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+        });
+        services.AddScoped<ILoggingClass, LoggingClass>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

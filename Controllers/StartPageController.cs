@@ -2,16 +2,23 @@ using LoggingOptimizely.Models.Pages;
 using LoggingOptimizely.Models.ViewModels;
 using EPiServer.Web;
 using EPiServer.Web.Mvc;
+using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LoggingOptimizely.Controllers;
 
 public class StartPageController : PageControllerBase<StartPage>
 {
+    private readonly ILogger<StartPageController> _logger;
+
+    public StartPageController(ILogger<StartPageController> logger)
+    {
+        _logger = logger;
+    }
     public IActionResult Index(StartPage currentPage)
     {
         var model = PageViewModel.Create(currentPage);
-
+        _logger.LogInformation("Current page:" + model.CurrentPage.Name);
         // Check if it is the StartPage or just a page of the StartPage type.
         if (SiteDefinition.Current.StartPage.CompareToIgnoreWorkID(currentPage.ContentLink))
         {
@@ -23,7 +30,7 @@ public class StartPageController : PageControllerBase<StartPage>
             editHints.AddConnection(m => m.Layout.NewsPages, p => p.NewsPageLinks);
             editHints.AddConnection(m => m.Layout.CustomerZonePages, p => p.CustomerZonePageLinks);
         }
-
+        _logger.LogInformation("End Current page:");
         return View(model);
     }
 }

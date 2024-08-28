@@ -3,7 +3,7 @@
     "LoggingOptimizely": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5000/",
+      "applicationUrl": "https://localhost:5300/",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
